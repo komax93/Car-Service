@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Brand;
+use App\CarBrand;
 
 class BrandsController extends Controller
 {
     public function getBrands()
     {
-        return Brand::all();
+        return CarBrand::all();
     }
 }

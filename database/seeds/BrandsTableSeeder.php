@@ -11,9 +11,9 @@ class BrandsTableSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('brands')->delete();
+        \DB::table('car_brands')->delete();
 
-        \DB::table('brands')->insert([
+        \DB::table('car_brands')->insert([
             0 => [
                 'name' => 'Mercedes',
             ],
