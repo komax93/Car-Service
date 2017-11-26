@@ -1,0 +1,1 @@
+require('./ajax/car-items-loader');

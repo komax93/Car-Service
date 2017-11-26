@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home.index');
-});
+Route::get('/', 'HomeController@index');
+
+Route::get('brands', 'BrandsController@getBrands')->name('ajax-brands');
+
+Route::get('models/{brandId}', 'ModelsController@getModels')->name('ajax-models');

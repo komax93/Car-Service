@@ -36,22 +36,14 @@
                 <div class="form-group">
                     <label for="brand" class="col-sm-2 control-label">Brand</label>
                     <div class="col-sm-10">
-                        <select class="selectpicker" name="brand" id="brand">
-                            <option value="1">Mercedes</option>
-                            <option value="2">BMW</option>
-                            <option value="3">Audi</option>
-                        </select>
+                        <select class="selectpicker" name="brand" id="brand" title="Choose car brand..." data-url="/brands"></select>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="model" class="col-sm-2 control-label">Model</label>
                     <div class="col-sm-10">
-                        <select class="selectpicker" name="model" id="model">
-                            <option value="1">C63</option>
-                            <option value="2">747</option>
-                            <option value="3">A8</option>
-                        </select>
+                        <select class="selectpicker" name="model" id="model" title="Choose car model..." data-url="/models"></select>
                     </div>
                 </div>
 
