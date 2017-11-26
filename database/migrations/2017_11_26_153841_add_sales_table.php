@@ -18,7 +18,7 @@ class AddSalesTable extends Migration
             $table->unsignedInteger("brand_id")->index();
             $table->unsignedInteger("model_id")->index();
             $table->unsignedInteger("count");
-            $table->dateTime("sale_date");
+            $table->date("sale_date");
             $table->timestamps();
         });
     }

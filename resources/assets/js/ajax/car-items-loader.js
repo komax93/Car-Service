@@ -9,6 +9,7 @@ $(document).ready(() => {
 function changeModelByBrand(brandObj, modelObj) {
     brandObj.on('change', () => {
         let brandId = brandObj.find("option:selected").val();
+        modelObj.prop('disabled', false);
 
         getCarModels(modelObj, brandId);
     });

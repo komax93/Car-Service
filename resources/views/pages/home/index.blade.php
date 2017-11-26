@@ -32,32 +32,32 @@
         <hr>
 
         <div class="form-container">
-            <form class="form-horizontal" method="POST" action="/">
+            <form class="form-horizontal" method="POST" action="/api/v1/sales">
                 <div class="form-group">
                     <label for="brand" class="col-sm-2 control-label">Brand</label>
                     <div class="col-sm-10">
-                        <select class="selectpicker" name="brand" id="brand" title="Choose car brand..." data-url="/brands"></select>
+                        <select class="selectpicker" name="brand" id="brand" title="Choose car brand..." data-url="/api/v1/brands"></select>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="model" class="col-sm-2 control-label">Model</label>
                     <div class="col-sm-10">
-                        <select class="selectpicker" name="model" id="model" title="Choose car model..." data-url="/models"></select>
+                        <select class="selectpicker" name="model" id="model" title="Choose car model..." data-url="/api/v1/models" disabled></select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="cars_count" class="col-sm-2 control-label">Count</label>
+                    <label for="count" class="col-sm-2 control-label">Count</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" id="cars_count" placeholder="Cars count">
+                        <input type="number" class="form-control" name="count" id="count" placeholder="Cars count">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="date" class="col-sm-2 control-label">Date</label>
                     <div class="col-sm-10">
-                        <input name="date" type='text' class="form-control" id="date" placeholder="MM/DD/YYY"/>
+                        <input name="date" type='text' class="form-control" id="date" placeholder="YYYY/MM/DD"/>
                     </div>
                 </div>
 

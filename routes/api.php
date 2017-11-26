@@ -13,6 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('v1')->group(function(){
+    Route::get('brands', 'BrandsController@getBrands')->name('ajax-brands');
+
+    Route::get('models/{brandId}', 'ModelsController@getModels')->name('ajax-models');
+
+    Route::post('sales', 'SalesController@store')->name('ajax-sales');
 });
