@@ -30,6 +30,8 @@ class SaleRepository implements SaleRepositoryContract
             ->join('car_brands', 'sales.brand_id', 'car_brands.id')
             ->join('car_models', 'sales.model_id', 'car_models.id')
             ->groupBy('sale_date')
+            ->groupBy('brand_name')
+            ->groupBy('model_name')
             ->get();
     }
 }

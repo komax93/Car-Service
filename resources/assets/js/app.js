@@ -7,7 +7,7 @@ $(document).ready(() => {
     getSummaryTable(tbody);
     getCarBrands(brand);
     changeModelByBrand(brand, model);
-    submitForm(form);
+    submitForm(form, tbody);
 });
 
 function getSummaryTable(tbodyObj) {
@@ -73,7 +73,7 @@ function getCarModels(modelObj, id) {
     });
 }
 
-function submitForm(formObj) {
+function submitForm(formObj, tBodyObj) {
     formObj.on('submit', (e) => {
         e.preventDefault();
 
@@ -85,8 +85,8 @@ function submitForm(formObj) {
             method: "POST",
             data: formData,
             success: (res) => {
-                $("tbody").empty();
-                getSummaryTable();
+                tBodyObj.empty();
+                getSummaryTable(tBodyObj);
                 clearForm(formObj);
             }
         });
