@@ -18,15 +18,7 @@
                 </tr>
             </thead>
 
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>2017</td>
-                    <td>Mercedes</td>
-                    <td>C63</td>
-                    <td>200</td>
-                </tr>
-            </tbody>
+            <tbody data-url="/api/v1/sales/summary"></tbody>
         </table>
 
         <hr>

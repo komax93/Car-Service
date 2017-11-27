@@ -18,5 +18,7 @@ Route::prefix('v1')->group(function(){
 
     Route::get('models/{brandId}', 'ModelsController@getModels')->name('ajax-models');
 
+    Route::get('sales/summary', 'SalesController@getSummaryData')->name('ajax-sales-summary');
+
     Route::post('sales', 'SalesController@store')->name('ajax-sales');
 });
